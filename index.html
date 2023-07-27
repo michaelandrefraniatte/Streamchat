@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Streamchat</title>
+    <meta name="description" content="Chat with viewers on your Twitch stream or simply have a look on it">
+    <meta name="keywords" content="chat, stream, twitch">
+    <meta name="author" content="MICHAEL ANDRE FRANIATTE">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../extra/w3.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../custom/custom.css" />
+    <link rel="stylesheet" href="../extra/rgpd.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../extra/spinner.css" />
+
+</head>
+
+<body id="page-top" onLoad="window_onload()">
+
+    <div class="back">
+
+    <div class="fa fa-spinner fa-spin spinner show"></div>
+
+    <span aria-label="No Cookies!" class="infobulle">&#8505;</span>
+
+    <button onclick="topFunction()" id="TopBtn" aria-label="Go to top">▲</button>
+
+    <div id="banner"><img src="../img/favicon.jpg" /><div id="closebanner">✖</div><div id="textbanner">This website respect entirely the life privacy. No cookies are stored on any database or any file or any webbrowser.</div><div id="button1banner">I understand</div><div id="button2banner">I don't understand</div></div>
+
+    <div class="top w3-center">
+        <a href="../#StreamchatOfficial"><img class="logo" src="sc.png" alt="sc"></a>
+        <div class="title colored">
+            <h2>Streamchat</h2>
+            <h1>Chat with Viewers of Your Stream</h1>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="w3-row first-section">
+            <div class="w3-container">
+                <h3 class="w3-center colored"><b>Optimize Your Streams</b></h3>
+                <p>
+                    <b>T</b>he program is a simple tool for optimize your stream on Twitch while playing a game. Instead of having a look on your stream, you can concentrate yourself on what you are streaming on Twitch, and the chat where viewers are posting messages. Your streaming capture and game you are playing are more optimized like that. Chat with viewers on your Twitch stream or simply have a look on it in an optimized way. The open folder button is made for open your channel chat with the file streamchat.txt containing your Twitch username. There is a purple circle indicating if your stream is on live, checked every 10 seconds. Let's see...
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-center row">
+            <div class="column">
+                <img src="../img/streamchat-main.png" alt="streamchat-main" style="width:30%" onclick='img_box("../img/streamchat-main.png")'>
+            </div>
+        </div>
+
+        <div class="w3-row second-section">
+            <div class="w3-container">
+                <h3 class="w3-center colored"><b>Considerations About the Program</b></h3>
+                <p>
+                    <b>S</b>treamchat can be used with <a href="https://www.twitch.tv/broadcast/studio">Twitch Studio</a> for streaming on Twitch easy and the better way because it's optimized. The file to open the chat shall contain only the name of the channel. You can try the web version of <a href="../streamchat/">streamchat</a>. For achieve this, I've created a token under Twitch Developer Console, enabling it for web site https://michaelandrefraniatte.github.io and https://michaelandrefraniatte.github.io/streamchat. This <a href="https://dev.twitch.tv/docs">doc</a> and this <a href="https://dev.twitch.tv/console">page</a> help you to have your client secret.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bottom w3-center">
+        <img src="../img/favicon.png" />
+        <br>
+        <b class="white">MAF</b>
+        <br>
+        <b class="colored">©1999-2023</b>
+    </footer>
+
+    </div>
+
+    <script type="text/javascript">
+        function window_onload() {
+            var sc = document.createElement('script');
+            sc.src = "../custom/custom.js";
+            document.getElementsByTagName('head')[0].appendChild(sc);
+   		    document.getElementsByClassName("spinner")[0].classList.remove("show");
+   		    document.getElementsByClassName("spinner")[0].classList.add("hide");
+  		    $(".spinner").removeClass("show");
+   		    $(".spinner").addClass("hide");
+        }
+    </script>
+
+</body>
+</html>
